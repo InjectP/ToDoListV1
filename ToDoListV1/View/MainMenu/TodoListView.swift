@@ -19,7 +19,7 @@ struct TodoListView: View {
                 
                 SearchBar(searchQuery: $vm.searchQuery)
                 
-                listTodo
+                listTodo 
                 
                 Spacer()
                 bottomPanel
@@ -33,7 +33,7 @@ struct TodoListView: View {
             progressLoader
             
         }.navigationDestination(isPresented: $edit) {
-            EditView(todo: vm.getObject(index: selectedId), idObject: selectedId).navigationBarBackButtonHidden()
+            TodoEditView(todo: vm.getObject(index: selectedId), idObject: selectedId, vm: vm).navigationBarBackButtonHidden()
                 .onDisappear{
                     reset()
                 }

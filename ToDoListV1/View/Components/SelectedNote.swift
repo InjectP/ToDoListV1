@@ -42,6 +42,6 @@ struct  SelectedNote: View {
 }
 
 #Preview {
-    TodoListView()
+    TodoListView(     )
         .withAutoPreviewEnvironment()
 }

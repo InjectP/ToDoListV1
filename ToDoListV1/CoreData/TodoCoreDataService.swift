@@ -2,8 +2,8 @@
 import SwiftUI
 import CoreData
 
-final class CoreDataManager {
-    static let shared = CoreDataManager()
+final class TodoCoreDataService {
+    static let shared = TodoCoreDataService()
     private init() {}
 
     private let context = PersistenceController.shared.container.viewContext
